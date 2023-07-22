@@ -11,7 +11,7 @@ function saveTxt(){
 
 function setTxt(){    
     txt = localStorage.getItem("key")
-    console.log(txt)
     h1.innerText = txt
+    localStorage.removeItem("key")
 
 }
