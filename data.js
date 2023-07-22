@@ -2,16 +2,17 @@ const h1 = document.querySelector('h1');
 const input = document.querySelector('input')
 const ancla = document.querySelector('a')
 let txt = "" 
+let key = "key"
 
 function saveTxt(){
     txt = input.value;
-    localStorage.setItem("key",txt);
+    localStorage.setItem(`${key}`,txt);
 
 }
 
 function setTxt(){    
-    txt = localStorage.getItem("key")
+    txt = localStorage.getItem(`${key}`)
     h1.innerText = txt
-    localStorage.removeItem("key")
+    localStorage.removeItem(${key})
 
 }
