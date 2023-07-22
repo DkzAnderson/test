@@ -13,6 +13,7 @@ function saveTxt(){
 function setTxt(){    
     txt = localStorage.getItem(`${key}`)
     h1.innerText = txt
-    localStorage.removeItem(${key})
+    h1.style.color = "blue"
+    localStorage.removeItem(`${key}`)
 
 }
